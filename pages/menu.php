@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <?php
-include '../controller/session.php';
+include ("../controller/session.php");
 ?>
 
   <head>
@@ -46,9 +46,7 @@ include '../controller/session.php';
             <div class="row row-offcanvas row-offcanvas-right">
                 <nav class="bg-white sidebar sidebar-fixed sidebar-offcanvas" id="sidebar">
                 <div class="user-info">
-                    <img src="<?php echo $_SESSION['usuarioAvatar']?>" alt="">
                     <p class="name"><?php echo $_SESSION['usuarioNome'] ?> </p>
-                    <p class="designation"><?php echo $_SESSION['usuarioFuncao'] ?> </p>
                 </div>
                     <ul class="nav">
                         <li class="nav-item active">
@@ -67,8 +65,13 @@ include '../controller/session.php';
                             <div class="collapse" id="collapseCadastro">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_cliente.php">
+                                        <a class="nav-link" href="cadastro_disciplina.php">
                                       Cadastrar
+                                    </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cadastro_cliente.php">
+                                      Listar Disciplinas
                                     </a>
                                     </li>
                                     <li class="nav-item">
@@ -76,11 +79,7 @@ include '../controller/session.php';
                                       Notas
                                     </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_usuario.php">
-                                      Remover
-                                    </a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </li>
@@ -100,11 +99,6 @@ include '../controller/session.php';
                                     <li class="nav-item">
                                         <a class="nav-link" href="lista_os.php">
                                       Listar atividades
-                                    </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="samples/login.html">
-                                      Remover atividades
                                     </a>
                                     </li>
                                 </ul>

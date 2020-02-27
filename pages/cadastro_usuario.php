@@ -25,16 +25,11 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="form-group col-md-6">
-                <label for="funcao">Curso</label>
-                <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Digite a Curso do usuário" required="">
-              </div>
-            </div>
+          
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="email">nome de usuário</label>
+                <label for="email">email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Digite o nome do usuário" required="">
               </div>
             </div>

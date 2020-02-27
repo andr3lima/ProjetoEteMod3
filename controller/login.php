@@ -19,7 +19,6 @@
             $_SESSION['usuarioId'] = $resultado['id'];
             $_SESSION['usuarioNome'] = $resultado['usuario'];
             $_SESSION['usuarioFuncao'] = $resultado['funcao'];
-            $_SESSION['usuarioAvatar'] = $resultado['avatar'];
           //  $_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
             $_SESSION['usuarioEmail'] = $resultado['email'];
           // if($_SESSION['usuarioNiveisAcessoId'] == "1"){
