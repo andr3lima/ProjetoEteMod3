@@ -16,7 +16,7 @@
         if(isset($resultado)){
            session_start(); 
             $_SESSION['status'] = 'LOGADO';
-            $_SESSION['usuarioId'] = $resultado['id'];
+            $_SESSION['usuarioId'] = $resultado['ID'];
             $_SESSION['usuarioNome'] = $resultado['usuario'];
             $_SESSION['usuarioFuncao'] = $resultado['funcao'];
           //  $_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];

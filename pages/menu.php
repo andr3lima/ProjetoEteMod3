@@ -70,7 +70,7 @@ include ("../controller/session.php");
                                     </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_cliente.php">
+                                        <a class="nav-link" href="../pages/lista_disciplinas.php">
                                       Listar Disciplinas
                                     </a>
                                     </li>
