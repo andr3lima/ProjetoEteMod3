@@ -22,8 +22,8 @@ include ("../controller/session.php");
         <!--Navbar-->
         <nav class="navbar bg-primary-gradient col-lg-12 col-12 p-0 fixed-top navbar-inverse d-flex flex-row">
             <div class="bg-white text-center navbar-brand-wrapper">
-                 <a class="navbar-brand brand-logo" href="#"><img style="width: 90%;" src="../images/titulo.png" /></a>
-                 <a class="navbar-brand brand-logo-mini" href="#"><img src="../images/titulo-mini.png?a" alt=""></a>
+                 <a class="navbar-brand brand-logo" href="index.php"><img style="width: 90%;" src="../images/titulo.png" /></a>
+                 <a class="navbar-brand brand-logo-mini" href="index.php"><img src="../images/titulo-mini.png?a" alt=""></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                
@@ -74,11 +74,7 @@ include ("../controller/session.php");
                                       Listar Disciplinas
                                     </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_tecnico.php">
-                                      Notas
-                                    </a>
-                                    </li>
+                                    
                                    
                                 </ul>
                             </div>
@@ -92,12 +88,12 @@ include ("../controller/session.php");
                             <div class="collapse" id="collapseOs">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_os.php">
+                                        <a class="nav-link" href="cadastro_atividade.php">
                                       Nova atividade
                                     </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="lista_os.php">
+                                        <a class="nav-link" href="lista_atividades.php">
                                       Listar atividades
                                     </a>
                                     </li>

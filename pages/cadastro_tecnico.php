@@ -3,7 +3,7 @@ include 'menu.php';
 ?>
 
 <div class="content-wrapper">
-    <h3 class="text-primary mb-12">Cadastro de técnico</h3>
+    <h3 class="text-primary mb-12">Notas</h3>
     <div class="row mb-12">
         <div class="col-lg-12">
             <div class="card">

@@ -1,9 +1,10 @@
 <?php
 include_once("database.php"); 
 include_once ("session.php");
+$IdUsuario = $_SESSION['usuarioId'];
 
 //MySqli Select Query
-$sql = "SELECT * FROM disciplinas where excluido=0 ORDER BY IDdisciplina";
+$sql = "SELECT * FROM disciplinas where excluido=0 and IDusuario = $IdUsuario  ORDER BY IDdisciplina";
 
 $results= mysqli_query($conn, $sql);
 
