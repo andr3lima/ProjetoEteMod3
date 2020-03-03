@@ -27,7 +27,6 @@ include 'menu.php';
                <option>Selecione...</option>
                <?php 
                include ("../controller/database.php");
-          #seleciona os dados da tabela produto
                $IdUsuario = $_SESSION['usuarioId'];
                $sql=("SELECT * FROM disciplinas WHERE IDusuario = $IdUsuario and excluido = 0");
                $query = mysqli_query($conn,$sql);

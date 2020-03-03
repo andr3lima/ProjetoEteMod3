@@ -1,5 +1,6 @@
 <?php 
 include 'menu.php';
+$ID = $_GET['id'];
 ?>
 
 <div class="content-wrapper">

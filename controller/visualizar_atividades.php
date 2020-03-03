@@ -1,6 +1,6 @@
 <?php
 include_once("database.php"); 
-include_once ("session.php");
+include_once("session.php");
 $IdUsuario = $_SESSION['usuarioId'];
 
 //MySqli Select Query
@@ -17,7 +17,7 @@ while($row = $results->fetch_object()) {
 
     print '<td class="actions">
 	 <a class="btn btn-success btn-sm" href="view.php?id='.$row->Atividade.'">Visualizar</a>
-	 <a class="btn btn-warning btn-sm" href="edit_atividade.php?id='.$row->Atividade.'">Editar</a>
+	 <a class="btn btn-warning btn-sm" href="edit_atividade.php?id='.$row->idAtividade.'">Editar</a>
 	 <a class="btn btn-danger btn-sm"  href="../controller/delete_atividade.php?id='.$row->idAtividade.'">Excluir</a></td>';
     print '</tr>';
 
