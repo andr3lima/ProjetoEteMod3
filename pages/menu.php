@@ -30,7 +30,7 @@ include ("../controller/session.php");
                 
                 <ul class="navbar-nav ml-lg-auto d-flex align-items-center flex-row">
                     <li class="nav-item">
-                        <a class="nav-link profile-pic"><img class="rounded-circle" src="<?php echo $_SESSION['usuarioAvatar']?>" alt=""> <?php echo $_SESSION['usuarioNome'] ?> </a>
+                        <a class="nav-link profile-pic"alt=""> <?php echo $_SESSION['usuarioNome'] ?> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../controller/logout.php">Sair</i></a>
@@ -132,13 +132,13 @@ include ("../controller/session.php");
                             <div class="collapse" id="collapsepecas">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="cadastro_pecas.php">
+                                        <a class="nav-link" href="edit_perfil.php">
                                       Atualizar perfil
                                     </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="lista_pecas.php">
-                                      Excluir perfil
+                                        <a class="nav-link" href="edit_senha.php">
+                                      Modificar senha
                                     </a>
                                     </li>
                                     
