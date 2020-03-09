@@ -8,12 +8,11 @@ $CursoUsuario = $_POST['curso'];
 $Turma =  $_POST['turma'];
 $Professor =  $_POST['professor'];
 $Media =  $_POST['media'];
-$Quantidade = $_POST['quantidade'];
 $excluido = "0";
 $IdUsuario = $_SESSION['usuarioId'];
 
 // attempt insert query execution
-$sql = "INSERT INTO disciplinas (IDusuario, NomeDisciplina, CursoUsuario, TurmaUsuario, Professor, Media, Quantidade, excluido) VALUES ('$IdUsuario','$NomeDisciplina', '$CursoUsuario', '$Turma', '$Professor', '$Media', '$Quantidade', '$excluido')";
+$sql = "INSERT INTO disciplinas (IDusuario, NomeDisciplina, CursoUsuario, TurmaUsuario, Professor, Media, excluido) VALUES ('$IdUsuario','$NomeDisciplina', '$CursoUsuario', '$Turma', '$Professor', '$Media', '$excluido')";
 if (mysqli_query($conn, $sql))
  {
   echo"<script language='javascript' type='text/javascript'>alert('Disciplina cadastrada com Sucesso!');window.location.href='../pages/index.php';</script>";

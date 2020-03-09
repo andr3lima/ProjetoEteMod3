@@ -4,8 +4,6 @@ include_once("database.php");
 
 $IdUsuario = $_SESSION['usuarioId'];
 $ID = $_GET['id'];
-
-//MySqli Select Query
 $sql = "SELECT * FROM disciplinas WHERE excluido=0 and IDusuario=$IdUsuario and IDdisciplina = $ID";
 $results= mysqli_query($conn, $sql);
 while($row = $results->fetch_object()) {
@@ -28,24 +26,22 @@ while($row = $results->fetch_object()) {
             </div>
 
             <div class="row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-7">
                   <label for="rua">Professor</label>
                   <input type="text" class="form-control" name="Professor" id="Professor" value="'.$row->Professor.'">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-5">
                   <label for="numero">Média da disciplina</label>
                   <input type="text" class="form-control" name="Media" id="Media" value="'.$row->Media.'">
                 </div>
-             
-               <div class="form-group col-md-4">
-                <label for="bairro">Quantidade de notas</label>
-                <input type="text" class="form-control" name="quantidade" id="quantidade" value="'.$row->Quantidade.'">
-              </div>
+
 
               <div class="form-group col-md-6">
                 <input type="number" name="IDdisciplina" value="'.$row->IDdisciplina.'" style="display: none;">
               </div>
 
       </div>';
+
+      
 }
   ?>

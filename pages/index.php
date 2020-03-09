@@ -85,74 +85,14 @@ $Porcen_emprestimo= ($result2[0] * 100) / $result0[0];
                         <div class="col-lg-6  mb-4">
                             <div class="card">
                                 <div class="card-block">
-                                    <h5 class="card-title mb-4">Total de Peças</h5>
+                                    <h5 class="card-title mb-4">Status das atividades</h5>
                                     <canvas id="doughnutChart" style="height:250px"></canvas>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card">
-                                <div class="card-block">
-                                    <h5 class="card-title mb-4">Payments</h5>
-                                    <table class="table">
-                                        <thead class="text-primary">
-                                            <tr>
-                                                <th><i class="fa fa-user ml-2"></i></th>
-                                                <th>User</th>
-                                                <th>Item</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th><img src="../images/profile.jpg" alt="profile" class="rounded-circle" width="40"
-                                                        height="40" /></th>
-                                                <td>Larry</td>
-                                                <td>Acer</td>
-                                                <td><span class="badge badge-success">Success</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th><img src="../images/profile.jpg" alt="profile" class="rounded-circle" width="40"
-                                                        height="40" /></th>
-                                                <td>Larry</td>
-                                                <td>Acer</td>
-                                                <td><span class="badge badge-danger">Failed</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th><img src="../images/profile.jpg" alt="profile" class="rounded-circle" width="40"
-                                                        height="40" /></th>
-                                                <td>Larry</td>
-                                                <td>Acer</td>
-                                                <td><span class="badge badge-primary">Processing</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th><img src="../images/profile.jpg" alt="profile" class="rounded-circle" width="40"
-                                                        height="40" /></th>
-                                                <td>Larry</td>
-                                                <td>Acer</td>
-                                                <td><span class="badge badge-success">Success</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th><img src="../images/profile.jpg" alt="profile" class="rounded-circle" width="40"
-                                                        height="40" /></th>
-                                                <td>Larry</td>
-                                                <td>Acer</td>
-                                                <td><span class="badge badge-danger">Failed</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="card">
-                                <div class="card-block">
-                                    <h5 class="card-title"></h5>
-                                    <div id="map" style="min-height:415px;"></div>
-                                </div>
-                            </div>
+                   
+                      
                         </div>
                     </div>
                 </div>

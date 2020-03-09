@@ -1753,6 +1753,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 0.25rem;
+  width: 95px;
   transition: all 0.2s ease-in-out; }
   .btn:focus, .btn:hover {
     text-decoration: none; }
@@ -1763,7 +1764,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     cursor: not-allowed;
     opacity: .65; }
   .btn:active, .btn.active {
-    background-image: none; }
+    background-image: none; 
+  }
 
 a.btn.disabled,
 fieldset[disabled] a.btn {
@@ -6217,7 +6219,8 @@ select.selectpicker {
 .bs-searchbox,
 .bs-actionsbox,
 .bs-donebutton {
-  padding: 4px 8px; }
+  padding: 4px 8px;
+   }
 
 .bs-actionsbox {
   width: 100%;

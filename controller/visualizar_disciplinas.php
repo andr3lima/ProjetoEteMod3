@@ -17,7 +17,7 @@ while($row = $results->fetch_object()) {
 
 
     print '<td class="actions">
-	 <a class="btn btn-success btn-sm" href="view.php?id='.$row->IDdisciplina.'">Visualizar</a>
+	 <a class="btn btn-success btn-sm" href="view_disciplina.php?id='.$row->IDdisciplina.'">Visualizar</a>
 	 <a class="btn btn-warning btn-sm" href="edit_disciplina.php?id='.$row->IDdisciplina.'">Editar</a>
 	 <a class="btn btn-danger btn-sm"  href="../controller/delete_disciplina.php?id='.$row->IDdisciplina.'">Excluir</a></td>';
     print '</tr>';

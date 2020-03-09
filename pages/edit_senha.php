@@ -6,7 +6,7 @@ $IdUsuario = $_SESSION['usuarioId'];
 
 <div class="content-wrapper">
     <h3 class="text-primary mb-12">Modificar senha</h3>
-    <form method="POST" action="../controller/update_perfil.php">
+    <form method="POST" action="../controller/update_senha.php">
         <div class="row mb-12">
             <div class="col-lg-12">
                 <div class="card">

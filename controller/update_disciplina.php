@@ -9,11 +9,10 @@ $Curso = $_POST['Curso'];
 $Turma =  $_POST['Turma'];
 $Professor =  $_POST['Professor'];
 $Media =  $_POST['Media'];
-$quantidade =  $_POST['quantidade'];
 $ID = $_POST['IDdisciplina'];
  
 // attempt insert query execution
- $sql = "UPDATE disciplinas SET NomeDisciplina = '$Nome', CursoUsuario = '$Curso', TurmaUsuario = '$Turma', Professor = '$Professor', Media ='$Media' ,Quantidade = '$quantidade' WHERE IDdisciplina='$ID'";
+ $sql = "UPDATE disciplinas SET NomeDisciplina = '$Nome', CursoUsuario = '$Curso', TurmaUsuario = '$Turma', Professor = '$Professor', Media ='$Media' WHERE IDdisciplina='$ID'";
 if (mysqli_query($conn, $sql))
  {
   echo"<script language='javascript' type='text/javascript'>alert('Disciplina atualizada com Sucesso!.');window.location.href='../pages/index.php';</script>";

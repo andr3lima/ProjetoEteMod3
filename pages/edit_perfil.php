@@ -37,9 +37,6 @@ $IdUsuario = $_SESSION['usuarioId'];
                         <div class="row">
                             <div class="col-md-6">
                                 <button type="submit" class="btn btn-primary">Atualizar</button>
-                                <form action="../controller/delete_perfil.php">
-                                    <button type="submit" class="btn btn-danger">Excluir perfil</button>
-                                </form>
                             </div>
                         </div>
                     </div>
