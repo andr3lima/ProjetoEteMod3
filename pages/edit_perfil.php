@@ -25,7 +25,7 @@ $IdUsuario = $_SESSION['usuarioId'];
                     </div>
                     
                     <div class="form-group col-md-12">
-                        <label for="E-mail">Nome</label>
+                        <label for="E-mail">E-mail</label>
                         <input type="text" class="form-control" name="email" id="email" value="' .$row->email. '"  required="">
                     </div>'
                 ?>

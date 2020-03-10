@@ -3,7 +3,7 @@ include 'menu.php';
 ?>
 
 <div class="content-wrapper">
-	<h3 class="text-primary mb-12">Atividades</h3>
+	<h3 class="text-primary mb-12">Atividades ativas</h3>
 	<form>
 		<div class="row mb-12">
 			<div class="col-lg-12">
