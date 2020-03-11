@@ -56,7 +56,7 @@ $IdUsuario = $_SESSION['usuarioId'];
         </div>
     </form>
 </div>
-
+</div>
   </div>
 
   <?php include 'footer.php';?>

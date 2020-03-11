@@ -4,7 +4,7 @@ include_once("session.php");
 $IdUsuario = $_SESSION['usuarioId'];
 
 //MySqli Select Query
-$sql = "SELECT a.NomeAtividade as Atividade, d.NomeDisciplina as Disciplina, a.DataEntrega as DataEntrega, a.IDatividade as idAtividade, a.concluido as concluido  FROM atividades as a inner join disciplinas as d on d.IDdisciplina = a.Disciplina  where a.excluido = 0 and a.IDusuario = $IdUsuario  and concluido = 0 ORDER BY a.IDatividade";
+$sql = "SELECT a.NomeAtividade as Atividade, d.NomeDisciplina as Disciplina, a.DataEntrega as DataEntrega, a.IDatividade as idAtividade, a.concluido as concluido  FROM atividades as a inner join disciplinas as d on d.IDdisciplina = a.Disciplina  where a.excluido = 0 and a.IDusuario = $IdUsuario  and concluido = 0 ORDER BY a.DataEntrega";
 $results= mysqli_query($conn, $sql);
 
 while($row = $results->fetch_object()) {

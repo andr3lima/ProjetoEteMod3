@@ -15,7 +15,7 @@ $ID = $_POST['IDdisciplina'];
  $sql = "UPDATE disciplinas SET NomeDisciplina = '$Nome', CursoUsuario = '$Curso', TurmaUsuario = '$Turma', Professor = '$Professor', Media ='$Media' WHERE IDdisciplina='$ID'";
 if (mysqli_query($conn, $sql))
  {
-  echo"<script language='javascript' type='text/javascript'>alert('Disciplina atualizada com Sucesso!.');window.location.href='../pages/index.php';</script>";
+  echo"<script language='javascript' type='text/javascript'>alert('Disciplina atualizada com Sucesso!.');window.location.href='../pages/lista_disciplinas.php';</script>";
  }else{
  	
 

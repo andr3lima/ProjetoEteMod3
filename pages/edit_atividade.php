@@ -12,11 +12,10 @@ $ID = $_GET['id'];
                 <div class="card-block">
                   <form > 
     <?php include("../controller/listar_atividades.php"); ?>
-<hr />
     <div class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary">Atualizar</button>
-      </div>
+        </div>
     </div>
             </form>
           </div>

@@ -41,7 +41,5 @@ print'<div class="row">
 
             <div class="form-group col-md-6">
             <input type="number" name="IDatividade" value="'.$row->idAtividade.'" style="display: none;">
-          </div>
-
-      </div>';
+          </div>';
                ?>

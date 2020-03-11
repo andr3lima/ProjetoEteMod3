@@ -43,12 +43,11 @@ include 'menu.php';
             <input type="date" class="form-control" name="data" id="data" placeholder="Auto preenchimento">
           </div>
               </div>
-  <hr>
 
     <div class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary">Cadastrar</button>
-        <a href="cadastro_atividade.php" class="btn btn-default">Cancelar</a>
+        <a href="index.php" class="btn btn-default">Cancelar</a>
       </div>
     </div>
   </form>

@@ -13,8 +13,6 @@ include ("../controller/session.php");
       <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
       <link rel="stylesheet" href="../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
       <link rel="stylesheet" href="../css/style.css"/>
-      <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-      <script type='text/javascript' src='../js/cep.js'></script>
       <link rel="shortcut icon" href="../images/favicon.png"/>
   </head>
   <body>
@@ -30,7 +28,7 @@ include ("../controller/session.php");
                 
                 <ul class="navbar-nav ml-lg-auto d-flex align-items-center flex-row">
                     <li class="nav-item">
-                        <a class="nav-link profile-pic"alt=""> <?php echo $_SESSION['usuarioNome'] ?> </a>
+                        <a class="nav-link" href="edit_perfil.php"> <?php echo $_SESSION['usuarioNome'] ?> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../controller/logout.php">Sair</i></a>
@@ -98,28 +96,6 @@ include ("../controller/session.php");
                                     </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" data-parent="#accordion" href="#collapserelatorio" aria-controls="collapserelatorio">
-                                <!-- <i class="fa fa-address-book"></i> -->
-                                <img src="../images/icons/8.png" alt="">
-                                <span class="menu-title">Relatório<i class="fa fa-sort-down"></i></span>
-                            </a>
-                            <div class="collapse" id="collapserelatorio">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="samples/blank_page.html">
-                                      Disciplinas
-                                    </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="samples/register.html">
-                                      Atividades
-                                    </a>
-                                    </li>
-                                 </ul>
                             </div>
                         </li>
 

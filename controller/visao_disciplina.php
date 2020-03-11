@@ -1,5 +1,4 @@
 <?php
-$dataAtual = date('d/m/y');
 $IdUsuario = $_SESSION['usuarioId'];
 $sql = "SELECT * FROM disciplinas WHERE excluido=0 and IDusuario=$IdUsuario and IDdisciplina = $ID";
 $results= mysqli_query($conn, $sql);
@@ -17,16 +16,25 @@ $soma = "SELECT SUM(valor) as soma FROM notas WHERE excluido = 0 and IDdisciplin
 $resultsSoma = mysqli_query($conn, $soma);
 $rowSoma = $resultsSoma->fetch_object();
 $totalSoma = $rowSoma->soma;
-$media = $totalSoma / $total;
-$mostrarMedia = number_format($media, 2, '.', ',');
 
-$mediaAprov = $row->Media;
 
-if ($media >= $mediaAprov){
-  $situacao =  "Aprovado";
-} else{
-  $situacao =  "Reprovado";
+if ($total != 0){
+  $media = $totalSoma / $total;
+  $mostrarMedia = number_format($media, 2, '.', ',');
+
+  $mediaAprov = $row->Media;
+  if ($media >= $mediaAprov){
+    $situacao =  "Acima da média";
+  } else{
+    $situacao =  "Abaixo da média";
+  }
+  
+} else {
+  $mostrarMedia = "N/A";
+  $situacao =  "N/A";
 }
+
+
 
 
 

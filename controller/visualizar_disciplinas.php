@@ -1,6 +1,6 @@
 <?php
 include_once("database.php"); 
-include_once ("session.php");
+include_once("session.php");
 $IdUsuario = $_SESSION['usuarioId'];
 
 //MySqli Select Query
