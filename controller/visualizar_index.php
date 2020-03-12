@@ -112,7 +112,7 @@
                                 
                                   $mediaAprov = $row->Media;
                                   
-                                  if ($media > $mediaAprov){
+                                  if ($media >= $mediaAprov){
                                     $situacao =  "Aprovado";
                                   }else{
                                       $situacao = "Reprovado";

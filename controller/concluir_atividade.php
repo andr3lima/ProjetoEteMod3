@@ -6,7 +6,7 @@ $ID = $_GET['id'];
 $dataAtual = date('d/m/y');
  
 // attempt insert query execution
-$sql = "UPDATE atividades SET concluido = 1 WHERE IDatividade='$ID'";
+$sql = "UPDATE atividades SET concluido = 1, DataFim = '$dataAtual' WHERE IDatividade='$ID'";
 if (mysqli_query($conn, $sql))
  {
   echo"<script language='javascript' type='text/javascript'>alert('Disciplina concluida com Sucesso!.');window.location.href='../pages/lista_atividades.php';</script>";

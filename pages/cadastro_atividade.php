@@ -23,8 +23,8 @@ include 'menu.php';
 
                 <div class="form-group col-md-4">
               <label for="disciplina">disciplina</label>
-              <select class="form-control" name="disciplina" id="disciplina">
-               <option>Selecione...</option>
+              <select class="form-control" name="disciplina" id="disciplina" required=""  >
+              <option value="" disabled selected>Selecione...</option>
                <?php 
                include ("../controller/database.php");
                $IdUsuario = $_SESSION['usuarioId'];
