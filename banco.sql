@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Mar-2020 às 21:08
+-- Tempo de geração: 13-Mar-2020 às 21:37
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.1
 
@@ -45,10 +45,21 @@ CREATE TABLE `atividades` (
 --
 
 INSERT INTO `atividades` (`IDatividade`, `NomeAtividade`, `Disciplina`, `DataEntrega`, `DataFim`, `IDusuario`, `excluido`, `concluido`, `status`) VALUES
-(4, 'Modelo Incremental', '10', '2020-03-11', '0000-00-00', 6, 0, 0, 1),
-(5, 'Atividade nova', '10', '2020-03-04', '0000-00-00', 6, 0, 0, 1),
-(6, 'Atividade nova', '12', '2020-04-09', '0000-00-00', 6, 0, 0, 1),
-(9, 'Html e Css', '13', '2020-03-11', '0000-00-00', 37, 0, 0, 0);
+(4, 'Modelo Incremental', '10', '2020-03-11', '2020-03-13', 6, 0, 1, 5),
+(5, 'Atividade nova', '10', '2020-03-04', '2020-03-13', 6, 0, 1, 5),
+(9, 'Html e Css', '13', '2020-03-11', '0000-00-00', 37, 0, 0, 0),
+(10, 'Introdução ao angular', '14', '2020-03-12', '0000-00-00', 38, 0, 0, 0),
+(11, 'Introdução ao angular', '14', '2020-03-13', '0000-00-00', 38, 0, 0, 0),
+(12, 'Introdução ao angular 2', '14', '2020-03-15', '0000-00-00', 38, 0, 0, 0),
+(16, 'Aslapinho gamer', '10', '2020-03-13', '2020-03-13', 6, 0, 1, 4),
+(17, 'anderson mestre', '9', '2020-03-14', '2020-03-13', 6, 0, 1, 4),
+(18, 'teste', '12', '2020-03-12', '2020-03-13', 6, 0, 1, 5),
+(19, 'Atividade 1', '15', '2020-03-19', '2020-03-13', 39, 0, 1, 4),
+(20, 'Atividade 3', '15', '2020-03-13', '0000-00-00', 39, 1, 0, 0),
+(21, 'Atividade 2', '15', '2020-03-11', '2020-03-13', 39, 0, 1, 5),
+(22, 'teste', '15', '2020-03-14', '0000-00-00', 39, 0, 0, 0),
+(23, 'Atividade 2', '15', '2020-03-11', '0000-00-00', 39, 0, 0, 0),
+(24, 'Atividade nova', '15', '2020-03-13', '0000-00-00', 39, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -75,7 +86,9 @@ INSERT INTO `disciplinas` (`IDdisciplina`, `IDusuario`, `NomeDisciplina`, `Curso
 (9, 6, 'Matematica', 'segundo ano', '1DSA', 'Morcone', 7, 0),
 (10, 6, 'Engenharia de software', '2 EM', 'B', 'David  Bezerra', 6, 0),
 (12, 6, 'Matematica 1', 'Desenvolvimento de sistemas', 'B', 'ANDRE LIMA', 7, 0),
-(13, 37, 'Web Design', 'Desenvolvimento de sistemas', '2DSA', 'Marcelo', 6, 0);
+(13, 37, 'Web Design', 'Desenvolvimento de sistemas', '2DSA', 'Marcelo', 6, 0),
+(14, 38, 'Angular', 'Udemy', 'B', 'ANDRE', 7, 0),
+(15, 39, 'Angular', 'Desenvolvimento de sistemas', 'A', 'André Lima', 7, 0);
 
 -- --------------------------------------------------------
 
@@ -104,7 +117,13 @@ INSERT INTO `notas` (`id`, `excluido`, `descricao`, `valor`, `IDdisciplina`) VAL
 (20, 1, 'nota 1', 2, 9),
 (21, 0, 'Nota 1', 8, 10),
 (22, 0, 'Nota 2', 5, 10),
-(23, 0, 'nota 3', 4, 10);
+(23, 0, 'nota 3', 4, 10),
+(24, 0, 'Prova 03', 9, 14),
+(25, 0, 'Prova 02', 6, 14),
+(26, 1, 'Prova 01', 5, 14),
+(27, 0, 'Prova 01', 6, 15),
+(28, 0, 'Prova 02', 5, 15),
+(29, 0, 'Prova 03', 10, 15);
 
 -- --------------------------------------------------------
 
@@ -149,7 +168,9 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`ID`, `usuario`, `email`, `senha`, `excluido`) VALUES
 (6, 'André Lima', 'andrevflima@gmail.com', '5e6fd1e398afed37d9a1a70536f1aac5', 0),
 (36, 'Andre Lima', 'totestando#@gmail.com', '202cb962ac59075b964b07152d234b70', 0),
-(37, 'André Fernandes ', 'aaa@gmail.com', '5e6fd1e398afed37d9a1a70536f1aac5', 0);
+(37, 'André Fernandes ', 'aaa@gmail.com', '5e6fd1e398afed37d9a1a70536f1aac5', 0),
+(38, 'David Bezerra', 'dvdbsilva@gmail.com', '89794b621a313bb59eed0d9f0f4e8205', 0),
+(39, 'novo teste', 'teste@gmail.com', '202cb962ac59075b964b07152d234b70', 0);
 
 --
 -- Índices para tabelas despejadas
@@ -194,31 +215,31 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `atividades`
 --
 ALTER TABLE `atividades`
-  MODIFY `IDatividade` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `IDatividade` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de tabela `disciplinas`
 --
 ALTER TABLE `disciplinas`
-  MODIFY `IDdisciplina` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `IDdisciplina` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `notas`
 --
 ALTER TABLE `notas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de tabela `status`
 --
 ALTER TABLE `status`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
