@@ -28,13 +28,16 @@
                             $results= mysqli_query($conn, $sql);
 
                             while($row = $results->fetch_object()) {
+
+                                $dataEntrega = $row->DataEntrega;
+
                                 print '<tr>';
                                 print '<td>'.$row->Atividade.'</td>'; 
                                 print '<td>'.$row->Disciplina.'</td>';
-                                print '<td>'.$row->DataEntrega.'</td>';
+                                print '<td>'.$dataEntrega.'</td>';
 
                                 $dataAtual = date('y-m-d');
-                                $dataEntrega = $row->DataEntrega;
+                                
 
                                 if(strtotime($dataAtual) > strtotime($dataEntrega)){
                                     print '<td class="actions">
